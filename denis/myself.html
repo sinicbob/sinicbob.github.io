@@ -15,12 +15,14 @@
 <body>
     <div id="preloader" class="preloader">
        
-        <div class="container">
-            <div class="row">
-                <div class="preloader_main"></div>
-            </div>
-        </div>
-
+                <div class="container w-100 h-100">
+                    <div class="row w-100 h-100">
+                        <div class="preload_main mx-auto mb-auto mt-auto">
+                        <div class="preloader_main"></div>
+                        </div>
+                    </div>
+                </div>
+        
     </div>
     <header id="header" class="header">
         <div class="header__top">
@@ -28,7 +30,7 @@
                         <div class="row">
                                 <div class="col-xl-5">
                                     <div class="logo">
-                                        <img  class="logo_img" src="img/logo.svg" alt="">
+                                        <img  class="logo_img" src="/img/logo.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-xl-3 ml-auto">
@@ -41,19 +43,19 @@
 
         <ul class="nav justify-content-center menu">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Главная</a>
+              <a class="nav-link" href="/">Главная</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="myself.html">О себе</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="prise.html">Прайс-лист</a>
+              <a class="nav-link" href="price.html">Прайс-лист</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">Портфолио</a>
-              </li>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacts.html">Контакты</a>
+                <a class="nav-link" href="" data-toggle="modal" data-target="#ModalZamer">Вызвать замерщика</a>
             </li>
           </ul>
             
@@ -120,45 +122,43 @@
 
 
     <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="footer__logo">
-                        <a href=""><img src="img/logo.svg" alt=""></a>
-                        <p>Ремонт квартир в Санкт-Петербурге</p>
-                        <ul class="social">
-                            <li><a href="viber.com"><i class="fab fa-viber fa-2x"></i></a></li>
-                            <li><a href="vk.com"><i class="fab fa-vk fa-2x"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="col">
-                        <div class="footer__menu">
-                            <h4>Меню</h4>
-                            <ul>
-                                <li><i class="fas fa-angle-double-right"></i> <a href="">Главная</a></li>
-                                <li><i class="fas fa-angle-double-right"></i> <a href="">О себе</a></li>
-                                <li><i class="fas fa-angle-double-right"></i> <a href="">Прайс-лист</a></li>
-                                <li><i class="fas fa-angle-double-right"></i> <a href="">Портфолио</a></li>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 mr-auto">
+                        <div class="footer__logo">
+                            <a href=""><img src="img/logo.svg" alt=""></a>
+                            <p>Ремонт квартир в Санкт-Петербурге</p>
+                            <ul class="social">
+                                <li><a href="https://viber.com"><i class="fab fa-viber fa-2x"></i></a></li>
+                                <li><a href="https://vk.com"><i class="fab fa-vk fa-2x"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="contacts">
-                      <h4>Контакты</h4>
-                      <ul>
-                          <li><i class="fas fa-mobile"></i> Телефон:+7(900)800-70-60</li>
-                          <li><i class="fas fa-envelope"></i> Email:mail@mail.ru</li>
-                          <li></li>
-                          <li></li>
-                      </ul>
-                  </div>
+                    <div class="col-xl-4">
+                        <div class="footer__menu">
+                                <h4>Меню</h4>
+                                <ul>
+                                    <li><i class="fas fa-angle-double-right"></i> <a href="">Главная</a></li>
+                                    <li><i class="fas fa-angle-double-right"></i> <a href="">О себе</a></li>
+                                    <li><i class="fas fa-angle-double-right"></i> <a href="">Прайс-лист</a></li>
+                                    <li><i class="fas fa-angle-double-right"></i> <a href="">Портфолио</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="col-xl-3">
+                      <div class="contacts">
+                          <h4>Контакты</h4>
+                          <ul>
+                              <li><i class="fas fa-mobile"></i> Телефон:+7(900)800-70-60</li>
+                              <li><i class="fas fa-envelope"></i> Email:mail@mail.ru</li>
+                              <li></li>
+                              <li></li>
+                          </ul>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <div class="footer-bottom">
 			<div class="container">
@@ -172,7 +172,41 @@
 					</div>					
 				</div>
 			</div>
-	</div>
+    </div>
+    
+<!-- Modal x2 -->
+<div class="modal fade" id="ModalZamer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <span class="modal_title">Вызов замерщика</span>
+                    <p>Оставьте ваши данные для связи, и наш специалист позвонит вам в ближайшее время.Если вы оставили заявку после 21:00,мы перезвоним вам на следующий день.</p>
+                    <div class="col">
+
+                            <form action="post">
+                                    <input type="text" name="name" placeholder="Как вас зовут?">
+                                    <input type="tel" name="tel" id="" placeholder="Ваш номер телефона">
+                                    
+        
+                                    <label>
+                                        <input type="checkbox" class="checkbox" name="" id="" checked="">
+                                        <span class="check-span">Согласие на обработку персональных данных</span>
+                                    </label>
+                                    <span class="block">Мастер проконсультирует вас по всем вопросам ремонта, составит подробную смету на все работы совершенно бесплатно.</span>
+                                    <input type="submit" class="" value="Позвоните мне">
+                            </form>
+
+                    </div>
+              <p>Или позвоните по телефону +7(900)800-70-60</p>
+            </div>
+          </div>
+        </div>
+    </div>          
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>

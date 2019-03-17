@@ -1,9 +1,31 @@
+
 $( document).ready(function(){
     let images = document.images,
      images_all = images.length ;
+     let images_count = 0;
     console.log(images);
     console.log(images_all);
-    $("#preloader").css("display","none");
+     for(let i = 0;i < images.length;i++)
+     {
+       let image_clone = new Image();
+       image_clone.onload = image_loaded;
+       image_clone.src = images[i].src;
+      console.log(image_clone)
+     }
+   
+     function image_loaded() {
+      images_count++;
+      console.log(images_count);
+        if(images_count >= images_all)
+        {
+           $("#preloader").css("display","none");
+        }
+     }
+     
+
+
+
+
     
   
       
